@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/lab2.css" />
+  </head>
+
+  <body>
+    <header>
+      <title>COSC 360 - Lab 2</title>
+      <h1>COSC 360</h1>
+      <h2>Lab 2 - CSS</h2>
+
+      <nav>
+        <div>
+          <a href="#Description">Description</a>
+          <a href="#RelatedPhotos">Related Photos</a>
+          <a href="#Reviews">Reviews</a>
+        </div>
+      </nav>
+    </header>
+
+    <article>
+      <h3>Description</h3>
+      <hr />
+      <p class="byline">Photo by Myriam Fotos</p>
+      <p>
+        This photo of ice crystals on a branch. The image is from
+        <a href="http://www.pixabay.com/">Pixabay</a> and was taken with a Canon
+        EOS 650D camera.
+      </p>
+
+      <figure>
+        <a href="images/eiskristalle-1938842_640.jpg">
+          <img
+            src="images/eiskristalle-1938842_640.jpg"
+            alt="Ice Crystals on a Branch"
+            id="largeimg"
+          />
+        </a>
+        <figcaption class="byline">
+          <em>Ice Crystals on a branch</em>
+        </figcaption>
+      </figure>
+
+      <div id="roundedbackground">
+        <p id="pspecial">
+          <span id="p1"></span>
+
+        <span id="p2">Share</span>
+
+        <span id="p3">
+          <img src="images/social/email_16.png" alt="Email this to someone" />
+
+          <img src="images/social/rss_16.png" alt="Syndicated content" />
+
+          <img src="images/social/twitter_16.png" alt="Share this on Twitter" />
+
+          <img src="images/social/facebook_16.png" alt="Share this on Facebook"/>
+
+          <img src="images/social/flickr_16.png" alt="See this on Flickr" />
+        </span>
+
+      </p>
+      </div>
+
+      <h3 id="RelatedPhotos">Related Photos</h3>
+      <div class="byline">
+        <a href="images/frost-490807_640.jpg">
+          <img
+            src="images/frost-490807_640.jpg"
+            alt="related photo"
+            height="100"
+          />
+        </a>
+
+        <a href="images/ice-crystal-64157_640.jpg">
+          <img
+            src="images/ice-crystal-64157_640.jpg"
+            alt="related photo"
+            height="100"
+          />
+        </a>
+
+        <a href="images/hoarfrost-639980_640.jpg">
+          <img
+            src="images/hoarfrost-639980_640.jpg"
+            alt="related photo"
+            height="100"
+          />
+        </a>
+      </div>
+
+      <h3 id="Reviews">Reviews</h3>
+      <hr />
+      <div>
+        <p class="byline">
+          By Bob on <time datetime="2017-01-11">January 11, 2017</time>
+        </p>
+        <p>Those are some nice ice photos.</p>
+        <hr class="dot" />
+      </div>
+      <hr />
+      <div>
+        <p class="byline">
+          By Alice on <time datetime="2016-10-01">October 1, 2016</time>
+        </p>
+        <p>Beautiful photos.</p>
+        <hr class="dot" />
+      </div>
+    </article>
+
+    <footer>
+      <div>
+        <a href="#">Home</a>
+        <a href="#">Browse</a>
+        <a href="#">Search</a>
+      </div>
+      <p><em>Copyright &#169; 2021 COSC Lab 1</em></p>
+    </footer>
+  </body>
+</html>

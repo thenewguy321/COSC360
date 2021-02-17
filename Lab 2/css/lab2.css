@@ -1,0 +1,95 @@
+header, 
+footer
+{
+  color: white;
+  background-color: #312C32;
+  margin: 0em 4em 0.5em 4em;
+}
+
+body {
+  background-color:#98DAFC;
+  font-family: Georgia, "Cambria", "Times New Roman", serif;
+  font-size: 100%;
+}
+
+h1, h2, h3, nav, footer {
+  font-family:"Trebuchet MS", "Lucida Grande", Tahoma, sans-serif
+}
+
+h1{
+  font-size: 1.5em;
+}
+h2{
+  font-size: 0.75em;
+}
+h3,nav{
+  font-size: 1.125em;
+}
+
+a:link {
+  color:#DAAD86;
+}
+a:visited {
+  color: #98DAFC;
+}
+a:hover {
+  background-color: #FFFFCC;
+}
+
+#largeimg{
+  border: 1px solid rgb(0, 0, 0);
+  padding: 0.25em;
+  width: 98%;
+}
+
+.byline {
+  font-style: italic;
+  color: #858585;
+}
+
+article{
+  padding:0.25em;
+  margin: 0em 4em 0.5em 4em;
+  background-color: #ffffff;
+}
+
+#roundedbackground {
+  border-radius: 3px;
+  background-color:#98DAFC;
+  background-image:url(./../images/gray-gradient.png);
+  background-repeat: repeat-x;
+  height: 50px;
+}
+
+#pspecial {
+  font-size: 70%;
+  margin: 0;
+  padding-top: 1em;
+  padding-left: 1em;
+}
+
+#p1{
+  height:25px;
+  background:url(./../images/glyphicons-152-new-window.png) no-repeat;
+  width:25px;
+  display:inline-block;
+ 
+}
+#p2{
+  line-height:25px; 
+  vertical-align: top;
+  display:inline-block;
+
+}
+#p3{
+  height:25px;
+  padding-top: 0.5em;
+  vertical-align: top;
+  display:inline-block;
+}
+
+
+.dot {
+  border-top:2px dotted #000;
+}
+
