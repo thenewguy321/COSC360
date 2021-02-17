@@ -1,4 +1,4 @@
-# COSC360
+# COSC 360
 LabFiles
 
-Includes all files that are used for myself in COSC 360
+Assignments for COSC 360 - Web Programming
