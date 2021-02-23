@@ -1,4 +1,2 @@
 # COSC 360
-LabFiles
-
-Assignments for COSC 360 - Web Programming
+Completed Web Programming Assignments
