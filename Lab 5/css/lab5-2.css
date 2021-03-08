@@ -1,0 +1,49 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif
+}
+form{
+    background-color:  rgb(204, 188, 144);
+    padding: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+table{
+    background-color: rgb(226, 226, 226);
+    border-collapse: collapse;
+    text-align: center;
+    font-size:15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#prev{
+    text-align: left;
+    
+}
+#next{
+    text-align: right;
+}
+
+#sun{
+    color:cadetblue;
+}
+#today{
+    background-color: cadetblue;
+}
+table td:hover{
+    background-color: rgb(248, 0, 0);
+}
+table caption{
+    background-color: rgb(103, 138, 69);
+    padding:0.5px;
+}
+
+thead th{
+    font-size: 12.5px;
+    border:  0.5px solid rgb(255, 255, 255); 
+}
+table td { 
+    border: 0.5px solid rgb(255, 255, 255); 
+}
+table tfoot a:link{
+    color: black;
+}
