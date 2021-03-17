@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+  <p>A script on this page starts this clock:</p>
+
+  <p id="time_one"></p>
+
+  <p id="time_two"></p>
+
+  <!-- Add button and table here -->
+
+  <button type="button" id="getCity">Get City Info</button>
+
+  <table id="table_data"></table>
+
+  <script>
+
+  $("#getCity").click(function(){
+    var city = $.get("http://www.randyconnolly.com/funwebdev/services/travel/cities.php");
+
+var preview = $('<tr><th>Name</th><th>ISO</th><th>Latitude</th><th>Longitude</th><th>Population</th><th>Elevation</th></tr>');
+$("#table_data").append(preview);
+
+
+city.done(function(data) {
+  $.each(data, function(i) {
+  //$("#table_data").html("Id's: " + data[i].name);
+  var name=data[i].name;
+  var ISO=data[i].iso;
+  var lat=data[i].latitude;
+  var long=data[i].longitude;
+  var pop=data[i].population;
+  var elev=data[i].elevation;
+  var temps = $("<tr><td>"+name+"</td><td>"+ISO+"</td><td>"+lat+"</td><td>"+long+"</td><td>"+pop+"</td><td>"+elev+"</td></tr>")
+  $("#table_data").append(temps);
+  })
+});
+
+city.fail(function(jqXHR) {console.log("Error: " + jqXHR.status);});
+city.always(function() {console.log("done");});
+
+
+  }
+  );
+
+
+  
+
+
+
+
+
+  //set interval timers to trigger the refresh.  Here the callback function will
+  //be called when the timer fires
+  var var1 = setInterval(timer1, 1000);
+  var var2 = setInterval(timer2, 1000);
+
+  //this is the callback function that will be run when timer1 runs.  Just pulls local time
+  function timer1() {
+      var d = new Date();
+      //Vanilla JS
+      //document.getElementById("time_one").innerHTML = d.toLocaleTimeString();
+      //jQuery
+      $("#time_one").html("From local system: " + d.toLocaleTimeString());
+  }
+
+  //this is the callback function that will be run when timer2 runs.
+  //This will contact the server at the specified url and wait for the data
+  //In this case time.jsontest.com just sends the time back as JSON but you could
+  //use this to pull data from a database or other data source.
+  function timer2() {
+      var results = $.get("http://time.jsontest.com/");
+      results.done(function(data) {
+                            console.log(data);
+                            //Vanilla JS
+                            //document.getElementById("time_two").innerHTML = data.time;
+                            //jQuery
+                            $("#time_two").html("Remote server time: " + data.time);
+                              });
+      results.fail(function(jqXHR) {console.log("Error: " + jqXHR.status);});
+      results.always(function() {console.log("done");});
+
+
+  }
+  </script>
+
+  </body>
+</html>
