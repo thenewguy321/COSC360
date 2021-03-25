@@ -1,0 +1,2 @@
+0101,Bob,Bob's favorite coffee,images\coffee1.jpg
+0102,Sally,Sally's favorite coffee,images\coffee2.jpg
